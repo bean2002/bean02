@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            background-color: #000;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #menu{
+            width: 100%;
+            height: 50px;
+            background-color: orange !important;
+        }
+        #menu ul{
+            list-style: none;
+            position: relative;
+            color: white;
+        }
+        #menu > ul{
+            text-align: center;
+            padding: 16.6px 0;
+        }
+        #menu > ul > li{
+            display: inline-block;;
+            text-align: center;
+            padding-left: 30px;
+        }
+        .menu2 {
+            display: noe;
+            position: absolute;
+            top: 16px;
+            width: 158px;
+            height: 116px;
+            background-color: orange;
+            margin-left: 150px;
+            
+        }
+        ul li ul.menu2{
+            
+            z-index: 999;
+        }
+        .menu2 li{
+            padding: 10px 0;
+            
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="menu">
+        <ul>
+            <li>Home</li>
+            <li>WordPess+
+                <ul class="menu2">
+                    <li>Resources</li>
+                    <li>Links</li>
+                    <li>Tutorials+
+                    </li>
+                </ul>
+            </li>
+            <li>Web Design</li>
+            <li>Graphic Design</li>
+            <li>Inspiration</li>
+            <li>Contact</li>
+            <li>About</li>
+        </ul>
+    </div>
+</body>
+</html>
